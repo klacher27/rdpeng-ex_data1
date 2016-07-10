@@ -7,7 +7,7 @@ plot(as.numeric(mydata1$Sub_metering_3),col="blue",type="l",axes=FALSE,ylim=c(0,
 axis(1, at = c(0,1500,2900),labels = c("Thu","Fri","Sat"))
 #axis(2, at = c(0,10,20,30),labels = c("0","10","20","30"))
 axis(2, at = c(0,10,20),labels = c("0","10","20"))
-legend("topright",legend=c("sub-metering1","sub-metering2","sub-metering3"),col=c("black","red","blue"),lty=c(1,1,1),lwd=2)
+legend("topleft",legend=c("sub-metering1","sub-metering2","sub-metering3"),col=c("black","red","blue"),lty=c(1,1,1),lwd=2,bty="n")
 box(lty = 1, col = 'black')
 dev.copy(png,"plot3.png")
 dev.off()
