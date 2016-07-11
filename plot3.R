@@ -1,4 +1,5 @@
 #using mydata1 which is filtered 2 day data see main.R for code
+par(mfrow=c(1,1))
 plot(1:nrow(mydata1),as.numeric(mydata1$Sub_metering_1),main="", ylab="Energy sub metering",xlab="",type="l",col="black",axes=FALSE)
 par(new=T)
 plot(as.numeric(mydata1$Sub_metering_2),col="red",type="l",axes=FALSE,ylim=c(0,20),xlab="",ylab="")
